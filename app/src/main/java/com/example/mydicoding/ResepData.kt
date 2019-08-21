@@ -31,6 +31,8 @@ object ResepData {
                 resep.sumber = aData[3]
                 resep.bahan = aData[4]
                 resep.resepDo = aData[5]
+
+                list.add(resep)
             }
             return list
         }
