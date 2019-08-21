@@ -8,6 +8,7 @@ import android.widget.ImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
 
 class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.Adapter<ListResepAdapter.ListViewHold>() {
@@ -22,7 +23,9 @@ class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.A
         val (resepName, resepSource, resepDesc, resepPhoto) = ResepData[position]
         Glide.with(holder.itemView.context)
             .load(resepPhoto)
-            .apply(RequestOptions().override(55, 55))
+            .apply(RequestOptions()
+                .format(DecodeFormat.PREFER_ARGB_8888))
+            .dontTransform()
             .into(holder.resepPhoto)
         holder.resepName.text = resepName
         holder.resepSource.text = resepSource

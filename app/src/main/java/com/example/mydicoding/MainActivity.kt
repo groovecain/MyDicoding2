@@ -2,11 +2,12 @@ package com.example.mydicoding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.R.attr.src
-import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
-import androidx.core.graphics.drawable.RoundedBitmapDrawable
+
+
 
 
 
@@ -30,5 +31,21 @@ class MainActivity : AppCompatActivity() {
         rvMain.layoutManager = LinearLayoutManager(this)
         val listResepAdapter = ListResepAdapter(list)
         rvMain.adapter = listResepAdapter
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        setMode(item.itemId)
+        return super.onOptionsItemSelected(item)
+    }
+    private fun setMode(selectedMode: Int) {
+        when (selectedMode) {
+            R.id.aboutMenu -> {
+            }
+
+        }
     }
 }

@@ -3,4 +3,5 @@
     <string name="resepName">Resep Title</string>
     <string name="resepDesc">Resep description</string>
     <string name="resepSource">Sumber</string>
+    <string name="about">About</string>
 </resources>
