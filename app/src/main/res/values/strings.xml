@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">MyDicoding</string>
-    <string name="nama_resep">Resep Title</string>
-    <string name="resepText">Resep description</string>
-    <string name="sumber">Sumber</string>
+    <string name="app_name">ResepKu</string>
+    <string name="resepName">Resep Title</string>
+    <string name="resepDesc">Resep description</string>
+    <string name="resepSource">Sumber</string>
 </resources>

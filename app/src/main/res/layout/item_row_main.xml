@@ -7,47 +7,61 @@
     android:layout_height="wrap_content"
     android:padding="@dimen/mainVerticalMargin">
 
-    <ImageView
+    <androidx.cardview.widget.CardView
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:id="@+id/img_food_photos"
         android:layout_marginEnd="@dimen/mainHorizontalMargin"
         android:layout_marginRight="@dimen/mainHorizontalMargin"
         android:layout_marginBottom="2dp"
-        tools:src="@android:color/holo_purple"
-        />
+        android:id="@+id/photosFrame"
+        app:cardCornerRadius="6dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/resepPhoto"
+            tools:src="@android:color/holo_purple"
+            />
+    </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@id/img_food_photos"
-        android:layout_toRightOf="@id/img_food_photos"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/photosFrame"
+        android:layout_toRightOf="@id/photosFrame">
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:id="@+id/resep_name"
-            tools:text="@string/nama_resep" />
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/resepName"
+            tools:text="@string/resepName" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:maxLines="1"
-            android:id="@+id/sumber_text"
-            tools:text="@string/sumber"
+            android:textSize="12sp"
+            android:id="@+id/resepSource"
+            tools:text="@string/resepSource"
             />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:justificationMode="inter_word"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/resep_text"
-            android:maxLines="2"
-            tools:text="@string/resepText"
+            android:maxLines="3"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/resepDesc"
+            tools:text="@string/resepDesc"
             />
+
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </RelativeLayout>

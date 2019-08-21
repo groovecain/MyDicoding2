@@ -15,28 +15,24 @@ class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.A
         val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_main, viewGroup, false)
         return ListViewHold(view)
     }
-
     override fun getItemCount(): Int {
         return ResepData.size
     }
-
     override fun onBindViewHolder(holder: ListViewHold, position: Int) {
-        val (namaResep, descResep, foodPhotos, sumber) = ResepData[position]
+        val (resepName, resepSource, resepDesc, resepPhoto) = ResepData[position]
         Glide.with(holder.itemView.context)
-            .load(foodPhotos)
+            .load(resepPhoto)
             .apply(RequestOptions().override(55, 55))
-            .into(holder.img_food_photos)
-        holder.resep_name.text = namaResep
-        holder.sumber_text.text = sumber
-        holder.resep_text.text = descResep
-
+            .into(holder.resepPhoto)
+        holder.resepName.text = resepName
+        holder.resepSource.text = resepSource
+        holder.resepDesc.text = resepDesc
     }
-
     inner class ListViewHold(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var resep_name: AppCompatTextView = itemView.findViewById(R.id.resep_name)
-        var sumber_text: AppCompatTextView = itemView.findViewById(R.id.sumber_text)
-        var resep_text: AppCompatTextView = itemView.findViewById(R.id.resep_text)
-        var img_food_photos: ImageView = itemView.findViewById(R.id.img_food_photos)
+        var resepName: AppCompatTextView = itemView.findViewById(R.id.resepName)
+        var resepSource: AppCompatTextView = itemView.findViewById(R.id.resepSource)
+        var resepDesc: AppCompatTextView = itemView.findViewById(R.id.resepDesc)
+        var resepPhoto: ImageView = itemView.findViewById(R.id.resepPhoto)
 
     }
 }
