@@ -49,6 +49,31 @@ object ResepData {
             "- 140g mi telur \n- 4 sdm kol iris \n- 1 sdm cabai merah giling \n- 1 sdm kecap asin \n- 1 sdt cuka \n- 2 sdm minyak \n- 600ml air \n- 2 siung bawang putih \n- 1 sdm daun bawang iris \n- 1 sdt Royco kaldu sapi \n- 1 sdm Bango kecap manis \n- 2 butir telur \n- 400ml kaldu tulang sumsum sapi",
             "1. Rebus mie dengan air mendidih selama 2-3 menit. Angkat dan tiriskan. \n2. Panaskan 2 sdm minyak, tumis bawang putih dan cabai hingga harum. Masukkan irisan kol, daun bawang, Royco Kaldu Sapi, kecap asin, dan Bango Kecap Manis. \n3. Tuang kaldu sapi dan 2 butir telur yang sudah dikocok lepas, aduk rata. Masukkan mie, aduk. Masak hingga matang. Angkat. \n4. Sajikan mie rebus dengan telur mata sapi dan rendang sapi.",
             "https://www.masakapahariini.com/wp-content/uploads/2019/03/mie--400x240.jpg"
+        ),
+        arrayOf(
+            "Udang Goreng Saos Tiram",
+            "doyanresep.com",
+            "Citarasa daging udang yang manis gurih membuat udang mudah diolah menjadi makanan atau masakan enak dibanding aneka seafood lainnya.",
+            "*Bahan Bumbu Udang : \n - Udang 400gr (Kupas & sisakan ekornya lumuri dengan air lemon, kemudian cuci bersih) \n - Lada bubuk 1/2 sendok teh \n - Garam 1 sendok teh \n - Tepung maizena 2 sendok makan \n - Campur semua bahan lalu diamkan kurang lebih selama 15 menitan \n\n* Bahan Pelapis udang goreng : \n - Tepung terigu 6 sampai 7 sendok makan \n - Kaldu jamur 1 sendok teh, bisa diganti penyedap rasa royco atau masako \n - Lada bubuk 1/4 sendok teh \n - Putih telur 2 butir \n\n*Bahan Bumbu Tumisan Udang Goreng Saus Tiram : \n - Bawang bombai 1 buah (iris memanjang) \n - Margarine 2 sendok makan (digunakan untuk menumis) \n - Saos tiram 3 sendok makan \n - Kecap manis 2 sendok makan \n - Gula pasir atau madu 1/2 sendok teh \n - Merica 1/4 sendok teh \n - Perasan air jeruk nipis atau jeruk limau 1 sendok teh \n - Tepung maizena 1/2 sendok makan, kemudian larutkan dengan 50 mili liter Air \n - Biji wijen secukupnya digunakan untuk taburan",
+            "1. Pertama-tama balur udang kewadah tepung, kemudian celupkan kewadah putih telur, kemudian balur kembali kewadah tepung sambil dicubit pelan-pelan. Lakukan sampai semua udang terlapisi tepung. \n2. Diamkan udang yang sudah dibalur tepung sekitar 10 menit, kemudian goreng hingga golden brown. Angkat lalu tiriskan. \n3. Masak bumbu saos dengan menggunakan api sedang-kecil. Sisihkan. \n4. Kemudian panaskan margarine, tumis bawang bombai hingga harum lalu tuang saos tiram dan kecap manis, \n5. Aduk rata, beri gula dan merica. Aduk kembali lalu koreksi rasa, tambahkan bumbu jika di rasa ada yang kurang. \n6. Langkah berikutnya tuang larutan maizena yang sudah disiapkan tadi, aduk hingga mendidih dan kental. \n7. Lalu msukkan udang yang sudah di goreng kedalam bahan saos, beri perasan air jeruk limo, langsung matikan api kompor dan aduk sampai udangnya tercampur bumbu hingga rata. \n8. Angkat dan tabur biji wijen secukupnya. \n9. Resep udang goreng saus tiram tabur wijen tidak pedas pun siap untuk disajikan untuk keluarga tercinta.",
+            "https://doyanresep.com/wp-content/uploads/2019/06/resep-udang-goreng-saus-tiram-768x960.jpg"
+        ),
+        arrayOf(
+            "Balado Kerang Kentang",
+            "citarasaindonesia.co.id",
+            "Kelezatannya dijamin siap menjadi menu favorit keluarga.",
+            "- 1 Sachet sambal balado indofood \n- 250g daging kerang \n- 250gr kentang \n- 2sdm air jeruk nipis \n- 2 lembar daun jeruk nipis \n- 100ml air \n- 2 sdm minyak goreng",
+            "1. Lumuri kerang dengan air jeruk nipis dan diamkan selama 15 menit. \n2. Goreng kentang setengah matang hingga sedikit kecokelatan, angkat dan sisihkan. \n3. Panaskan minyak, tumis BUMBU SAMBAL BALADO INDOFOOD dan daun jeruk hingga harum. \n4. Masukkan kerang, tumis hingga berubah warna. Tuang air, aduk masak hingga matang dan air menyusut. \n5. Masukkan kentang, aduk rata. Masak selama 5 menit hingga bumbu meresap lalu angkat dan sajikan.",
+            "https://citarasaindonesia.co.id/uploads/media/recipe/0001/03/thumb_2732_recipe_detail.jpeg"
+        ),
+        arrayOf(
+            "Ayam Panggang Bumbu Rujak",
+            "www.kreasisasa.com",
+            "Gurihnya ayam dengan wangi bumbu rujak siap menggugah selera anda",
+            "- 1 Ekor ayam, potong 4 bagian \n- 2 lembar daun salam \n- 2 cm lengkuas, memarkan \n- 5 lembar daun jeruk, iris \n- 2 batang serai, memarkan \n- 500ml air \n- 70gr SASA santan bubuk \n- 3sdm minyak, untuk menumis \n\nBumbu Halus : \n- 100gr cabe merah \n- 10 butir bawang merah \n- 4 siung bawang puting \n- 6 butir kemiri \n- 2cm jahe \n- 1/2 sdt terasi matang \n- 1 1/2 sdt garam \n- 2 sdt gula merah \n- 1 sdt asam jawa, larutkan dengan air",
+            "1. Rendam ayam dalam air jeruk beberapa saat. Cuci kembali ayam, tiriskan. \n2. Tumis bumbu halus bersama daun salam, lengkuas, serai dan daun jeruk hingga harum. \n3. Masukkan ayam, aduk hingga berubah warna. Tuang air, kemudian taburkan Sasa Santan Bubuk, aduk hingga rata. \n4. Masak dengan api sedang sampai santan mengental. Angkat, kemudian panggang ayam atau masukkan sebentar ke dalam oven hingga bumbunya sedikit mengering.",
+            "https://www.kreasisasa.com/upload/recipe/3109015be9c73de9d3bb8ba45ccc8b65.jpg"
+
         )
     )
 

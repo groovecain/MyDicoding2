@@ -8,4 +8,7 @@
     <string name="about">About</string>
     <string name="bahan_bahan">Bahan-bahan</string>
     <string name="cara_membuat">Cara Membuat</string>
+    <string name="nama_about">Steven Famy</string>
+    <string name="email_about">steve.mailme@gmail.com</string>
+    <string name="github_about">https://github.com/groovecain</string>
 </resources>
