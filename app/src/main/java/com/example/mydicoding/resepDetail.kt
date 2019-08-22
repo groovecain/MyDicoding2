@@ -2,10 +2,8 @@ package com.example.mydicoding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.widget.AppCompatTextView
-import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
@@ -46,9 +44,9 @@ class resepDetail : AppCompatActivity() {
         resepDo.text = resepDoVal
 
 
-        val actionbar = supportActionBar
-        actionbar!!.title = resepNameVal
-        actionbar.setDisplayHomeAsUpEnabled(true)
+        val actionbars = supportActionBar
+        actionbars!!.title = resepNameVal
+        actionbars.setDisplayHomeAsUpEnabled(true)
 
     }
     companion object {

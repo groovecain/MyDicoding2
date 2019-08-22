@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -52,8 +51,9 @@ class MainActivity : AppCompatActivity() {
     private fun setMode(selectedMode: Int) {
         when (selectedMode) {
             R.id.aboutMenu -> {
+                val goAbout = Intent(this@MainActivity, AboutActivity::class.java)
+                startActivity(goAbout)
             }
-
         }
     }
     private fun selectedResep(pos: Int) {
