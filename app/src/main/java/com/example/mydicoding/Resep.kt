@@ -1,10 +1,10 @@
 package com.example.mydicoding
 
-data class Resep(var namaResep: String = "",
-                 var descResep: String = "",
-                 var foodPhotos: String ="",
-                 var sumber: String = "",
-                 var bahan: String = "",
+data class Resep(var resepName: String = "",
+                 var resepSource: String = "",
+                 var resepDesc: String ="",
+                 var resepPhoto: String = "",
+                 var resepIng: String = "",
                  var resepDo: String = "")
 {
 

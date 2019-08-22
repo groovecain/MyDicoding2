@@ -1,12 +1,14 @@
 package com.example.mydicoding
 
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
 
 class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.Adapter<ListResepAdapter.ListViewHold>() {
@@ -14,28 +16,26 @@ class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.A
         val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_main, viewGroup, false)
         return ListViewHold(view)
     }
-
     override fun getItemCount(): Int {
         return ResepData.size
     }
-
     override fun onBindViewHolder(holder: ListViewHold, position: Int) {
-        val (namaResep, descResep, foodPhotos, sumber, bahan, resepDo) = ResepData[position]
+        val (resepName, resepSource, resepDesc, resepPhoto) = ResepData[position]
         Glide.with(holder.itemView.context)
-            .load(foodPhotos)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.img_food_photos)
-        holder.resep_name.text = namaResep
-        holder.sumber_text.text = sumber
-        holder.resep_text.text = descResep
-
+            .load(resepPhoto)
+            .apply(RequestOptions()
+                .format(DecodeFormat.PREFER_ARGB_8888))
+            .dontTransform()
+            .into(holder.resepPhoto)
+        holder.resepName.text = resepName
+        holder.resepSource.text = resepSource
+        holder.resepDesc.text = resepDesc
     }
-
     inner class ListViewHold(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var resep_name: TextView = itemView.findViewById(R.id.resep_name)
-        var sumber_text: TextView = itemView.findViewById(R.id.sumber_text)
-        var resep_text: TextView = itemView.findViewById(R.id.resep_text)
-        var img_food_photos: ImageView = itemView.findViewById(R.id.img_food_photos)
+        var resepName: AppCompatTextView = itemView.findViewById(R.id.resepName)
+        var resepSource: AppCompatTextView = itemView.findViewById(R.id.resepSource)
+        var resepDesc: AppCompatTextView = itemView.findViewById(R.id.resepDesc)
+        var resepPhoto: ImageView = itemView.findViewById(R.id.resepPhoto)
 
     }
 }
