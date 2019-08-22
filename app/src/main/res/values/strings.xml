@@ -3,5 +3,9 @@
     <string name="resepName">Resep Title</string>
     <string name="resepDesc">Resep description</string>
     <string name="resepSource">Sumber</string>
+    <string name="resepIng">Bahan-Bahan</string>
+    <string name="resepDo">Langkah</string>
     <string name="about">About</string>
+    <string name="bahan_bahan">Bahan-bahan</string>
+    <string name="cara_membuat">Cara Membuat</string>
 </resources>

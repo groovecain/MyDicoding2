@@ -12,6 +12,12 @@ import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
 
 class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.Adapter<ListResepAdapter.ListViewHold>() {
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ListViewHold {
         val view: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.item_row_main, viewGroup, false)
         return ListViewHold(view)
@@ -20,16 +26,16 @@ class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.A
         return ResepData.size
     }
     override fun onBindViewHolder(holder: ListViewHold, position: Int) {
-        val (resepName, resepSource, resepDesc, resepPhoto) = ResepData[position]
+        val (resepName, resepSource, resepDesc, resepIng, resepDo, resepPhoto) = ResepData[position]
         Glide.with(holder.itemView.context)
             .load(resepPhoto)
             .apply(RequestOptions()
                 .format(DecodeFormat.PREFER_ARGB_8888))
-            .dontTransform()
             .into(holder.resepPhoto)
         holder.resepName.text = resepName
         holder.resepSource.text = resepSource
         holder.resepDesc.text = resepDesc
+        holder.itemView.setOnClickListener { onItemClickCallback.onItemClicked(holder.adapterPosition) }
     }
     inner class ListViewHold(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var resepName: AppCompatTextView = itemView.findViewById(R.id.resepName)
@@ -38,4 +44,9 @@ class ListResepAdapter(private val ResepData: ArrayList<Resep>) : RecyclerView.A
         var resepPhoto: ImageView = itemView.findViewById(R.id.resepPhoto)
 
     }
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Int)
+    }
 }
+
+
